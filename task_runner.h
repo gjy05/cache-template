@@ -6,7 +6,8 @@
 #include <string>
 
 // 작업을 수행하기 위해 사용하는 클래스
-class TaskRunner {
+class TaskRunner
+{
 private:
   // 문자열이 팰린드롬인지 검사한다
   static bool isPalindrome(std::string str) {

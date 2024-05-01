@@ -18,8 +18,10 @@ public:
   // double을 cache에 추가한다
   void add(std::string key, double value);
   // key에 해당하는 value를 cache에서 가져온다
+  // 타입과 key가 동일한 원소가 없다면 false를 반환한다.
   bool get(std::string key, int &value);
-  // key에 해당하는 value를 cache에서 가져온다
+  // key에 해당하는 value를 cache에서 가져온다.
+  // 타입과 key가 동일한 원소가 없다면 false를 반환한다.
   bool get(std::string key, double &value);
 
   // 디버그 및 채점 용: 연결 리스트를 문자열로 표현하여 반환한다
